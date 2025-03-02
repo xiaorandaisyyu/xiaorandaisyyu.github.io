@@ -196,7 +196,7 @@ a {
 
 .archive-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: center;
@@ -231,6 +231,13 @@ a {
 .archive-item>.tags {
   display: flex;
   font-size: 0.9em;
+}
+
+.post-excerpt {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-top: 5px;
 }
 
 .paginator {
