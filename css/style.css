@@ -98,10 +98,10 @@ a {
 
 .post-item-title {
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.5;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   color: var(--font-color);
 }
 
@@ -112,7 +112,7 @@ a {
 }
 .post-item-summary {
   word-break: break-all;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .post-item-extra, .post-meta {
@@ -235,9 +235,10 @@ a {
 
 .post-excerpt {
   color: #555;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.6;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .paginator {
@@ -284,4 +285,21 @@ a {
   color: var(--font-color);
   border-bottom: 2px solid var(--font-color);
   cursor: not-allowed;
+}
+
+.gallery img {
+  width: 200px;  /* Set thumbnail width */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optional: Rounded corners */
+  margin: 5px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.gallery img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.gallery a {
+  display: inline-block;    /* Ensures images don't break onto new lines */
 }

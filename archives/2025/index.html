@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "\\(", right: "\\)", display: false}
+    ]
+  });
+});
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js"></script>
+
+
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
@@ -31,7 +49,11 @@
   
 <link rel="stylesheet" href="/css/post.css">
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
   <header class="header">
@@ -55,11 +77,11 @@
   
   <li class="archive-item">
     <!-- <span class="date">2025.03.01</span>
-    <a class="title" href="/2025-03-01-publication-1.html">Publication 1 with a very very very long title</a> -->
+    <a class="title" href="/2025-03-01-gallery-1.html">Royal Albert Hall through my lens</a> -->
     
     <!-- Post Title (Top Line) -->
     <h5 class="post-item-title">
-      <a href="/2025-03-01-publication-1.html">Publication 1 with a very very very long title</a>
+      <a href="/2025-03-01-gallery-1.html">Royal Albert Hall through my lens</a>
     </h5>
 
     <!-- <div class="tags">
@@ -68,17 +90,17 @@
 
     <!-- Add excerpt or generate short text from content -->
     <!-- <p class="post-excerpt">
-      &lt;p&gt;This is a short introduction to the publication. &lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;framing “the hall” in the embrace of dawns, dusks, and all the fleeting instants in between&lt;/em&gt;&lt;/p&gt;
     </p> -->
     <div class="post-excerpt">
       
-        <p>This is a short introduction to the publication. </p>
+        <p><em>framing “the hall” in the embrace of dawns, dusks, and all the fleeting instants in between</em></p>
       
     </div>
     
     <!-- Optional "Read more" button -->
     <div class="read-more-wrapper">
-      <a href="/2025-03-01-publication-1.html" class="read-more">Read more</a>
+      <a href="/2025-03-01-gallery-1.html" class="read-more">Read more</a>
     </div>
 
     </li>
@@ -98,11 +120,11 @@
 
     <!-- Add excerpt or generate short text from content -->
     <!-- <p class="post-excerpt">
-      &lt;p&gt;This is a short introduction to the project. &lt;/p&gt;
+      &lt;p&gt;This is a short introduction to the project.&lt;/p&gt;
     </p> -->
     <div class="post-excerpt">
       
-        <p>This is a short introduction to the project. </p>
+        <p>This is a short introduction to the project.</p>
       
     </div>
     
@@ -140,6 +162,36 @@
     <!-- Optional "Read more" button -->
     <div class="read-more-wrapper">
       <a href="/2025-02-28-hello-world.html" class="read-more">Read more</a>
+    </div>
+
+    </li>
+  
+  <li class="archive-item">
+    <!-- <span class="date">2025.01.22</span>
+    <a class="title" href="/2025-01-22-publication-1.html">A neural network approach for line detection in complex atomic emission spectra measured by high-resolution Fourier transform spectroscopy</a> -->
+    
+    <!-- Post Title (Top Line) -->
+    <h5 class="post-item-title">
+      <a href="/2025-01-22-publication-1.html">A neural network approach for line detection in complex atomic emission spectra measured by high-resolution Fourier transform spectroscopy</a>
+    </h5>
+
+    <!-- <div class="tags">
+      
+    </div> -->
+
+    <!-- Add excerpt or generate short text from content -->
+    <!-- <p class="post-excerpt">
+      &lt;p&gt;Ding, M., Lim, S.Z., &lt;strong&gt;Yu, X.&lt;/strong&gt;, Clear, C.P. and Pickering, J.C., 2025. A neural network approach for line detection in complex atomic emission spectra measured by high-resolution Fourier transform spectroscopy. &lt;em&gt;arXiv preprint arXiv:2501.12276.&lt;/em&gt; [&lt;a href=&#34;https://arxiv.org/abs/2501.12276&#34;&gt;&lt;u&gt;PDF&lt;/u&gt;&lt;/a&gt;]&lt;/p&gt;
+    </p> -->
+    <div class="post-excerpt">
+      
+        <p>Ding, M., Lim, S.Z., <strong>Yu, X.</strong>, Clear, C.P. and Pickering, J.C., 2025. A neural network approach for line detection in complex atomic emission spectra measured by high-resolution Fourier transform spectroscopy. <em>arXiv preprint arXiv:2501.12276.</em> [<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2501.12276"><u>PDF</u></a>]</p>
+      
+    </div>
+    
+    <!-- Optional "Read more" button -->
+    <div class="read-more-wrapper">
+      <a href="/2025-01-22-publication-1.html" class="read-more">Read more</a>
     </div>
 
     </li>
