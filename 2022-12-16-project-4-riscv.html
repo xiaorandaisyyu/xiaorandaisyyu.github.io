@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
   <title>
     
-    Hello World 丨
+    RISC-V Simulator 丨
     
 
     Xiaoran Yu
@@ -81,33 +81,23 @@ document.addEventListener("DOMContentLoaded", function() {
   <main class="main">
     <article class="post">
   
-  <div class="post-title">Hello World</div>
+  <div class="post-title">RISC-V Simulator</div>
   <div class="post-meta">
-    <div class="date">2025 February 28th</div>
+    <div class="date">2022 December 16th</div>
     <div class="tags">
       
     </div>
   </div>
   
 
-  <main class="post-content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<pre class="highlight"><code class="bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span>
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<pre class="highlight"><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<pre class="highlight"><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<pre class="highlight"><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <main class="post-content"><p>A RISC-V simulator, written in SystemVerilog. <a href="">[<u>GitHub Repo</u>]</a>  <a href="">[<u>Report PDF</u>]</a> <a href="">[<u>Personal Statement</u>]</a></p>
+<span id="more"></span>
+<h2 id="overview"><a class="markdownIt-Anchor" href="#overview"></a> Overview</h2>
+<p>I built a RISC-V simulator in SystemVerilog as part of my second year Instruction Architecture coursework. The coursework was completed in groups of four, and we received very high marks (A as team grade and A+ as individual grade).</p>
+<h2 id="project-outline"><a class="markdownIt-Anchor" href="#project-outline"></a> Project Outline</h2>
+<p>The CPU we implemented had 3 levels of structural complexity: single-cycled, pipelined, and pipelined with data cache. The processor successfully ran a self-written F1 starting light program and a provided reference program. For more details please check our group’s repo.</p>
+<h2 id="personal-contribution"><a class="markdownIt-Anchor" href="#personal-contribution"></a> Personal Contribution</h2>
+<p>In the coursework, I was mainly responsible for implementing the top-level module of the CPU, writing the testbench, and peforming the verification of the processor with various programs. For more details please check my personal statement.</p>
 </main>
 
 </article>

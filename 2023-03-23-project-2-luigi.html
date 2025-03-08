@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
   <title>
     
-    Royal Albert Hall through my lens 丨
+    Luigi Wagon: an FPGA-based IoT System 丨
     
 
     Xiaoran Yu
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   
   <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.css">
-  <!-- <link rel="stylesheet" href="/css/style.css?v=1741042833980"> -->
+  <!-- <link rel="stylesheet" href="/css/style.css?v=1741392989731"> -->
   <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
   
 
@@ -81,30 +81,32 @@ document.addEventListener("DOMContentLoaded", function() {
   <main class="main">
     <article class="post">
   
-  <div class="post-title">Royal Albert Hall through my lens</div>
+  <div class="post-title">Luigi Wagon: an FPGA-based IoT System</div>
   <div class="post-meta">
-    <div class="date">2025 March 1st</div>
+    <div class="date">2023 March 23rd</div>
     <div class="tags">
       
     </div>
   </div>
   
 
-  <main class="post-content"><p><em>framing “the hall” in the embrace of dawns, dusks, and all the fleeting instants in between</em></p>
+  <main class="post-content"><p>An IoT system that supports multiple player nodes to exchange information with a cloud server, in order to play a video game, Luigi Wagon (inspired by Mario Kart). <a href="">[<u>GitHub Repo</u>]</a>  <a href="">[<u>Report PDF</u>]</a></p>
 <span id="more"></span>
 <div class="gallery">
-  <a class="image-link" href="../img/rah/2022_02_26_21_28_IMG_5649.JPG" data-lightbox="rah" data-title="Once mistaken by a friend to be stolen from the official website of RAH, which was not."><img class="image" src="../img/rah/2022_02_26_21_28_IMG_5649.JPG" alt="" width="30"/>
+  <a class="image-link" href="../img/projects/luigi_wagon_grid.png" data-lightbox="rah" data-title="The starting grid."><img class="image" src="../img/projects/luigi_wagon_grid.png" alt="" width="30"/>
   </a>
-  <a class="image-link" href="../img/rah/2022_05_09_02_07_IMG_9955.JPG" data-lightbox="rah" data-title="The night I saw the guitar god for the first time. (1/4)"><img class="image" src="../img/rah/2022_05_09_02_07_IMG_9955.JPG" alt=""/>
-  </a>
-  <a class="image-link" href="../img/rah/2022_05_09_02_07_IMG_9952.JPG" data-lightbox="rah" data-title="The night I saw the guitar god for the first time. (2/4)"><img class="image" src="../img/rah/2022_05_09_02_07_IMG_9952.JPG" alt="" width="30"/>
-  </a>
-  <a class="image-link" href="../img/rah/2022_05_09_02_10_IMG_9956.JPG" data-lightbox="rah" data-title="The night I saw the guitar god for the first time. (3/4)"><img class="image" src="../img/rah/2022_05_09_02_10_IMG_9956.JPG" alt=""/>
-  </a>
-  <a class="image-link" href="../img/rah/2022_05_09_05_41_IMG_9989.JPG" data-lightbox="rah" data-title="The night I saw the guitar god for the first time. (4/4)"><img class="image" src="../img/rah/2022_05_09_05_41_IMG_9989.JPG" alt=""/>
+  <a class="image-link" href="../img/projects/luigi_wagon_win_page.png" data-lightbox="rah" data-title="Winner's page."><img class="image" src="../img/projects/luigi_wagon_win_page.png" alt="" width="30"/>
   </a>
 </div>
-<hr /></main>
+<h2 id="overview"><a class="markdownIt-Anchor" href="#overview"></a> Overview</h2>
+<p>This project is part of my second year Information Processing coursework in which our group developed an IoT system that supports multiple player nodes to exchange information with a cloud server, in order to play a video game, Luigi Wagon (inspired by Mario Kart). The coursework was completed in groups of six, and our group received high appreciations on both the oral presentation and the writtern report (A+).</p>
+<h2 id="project-outline"><a class="markdownIt-Anchor" href="#project-outline"></a> Project Outline</h2>
+<p>The project intended to make use of the knowledge acquired in various modules, such as Software Systems (networking, database), Signals &amp; Systems, Instruction Architectures (Verilog, CPUs), and Discrete Maths (algorithms, complexity).</p>
+<p>Data was captured by the accelerometer on FPGA boards as user controller input. UART was utilised for 2-way communication between nodes and a host PC. UDP was chosen for communication between the host PC and the EC2 server. DynamoDB was used as a NoSQL database for storing player data. Later enhancements on user experience include the reduction of multiplayer latency and the FPGA input latency.</p>
+<p>The game client was originally coded in Python with the PyGame library, then switched to Unity (C#) for a more entertaining 3D setting.</p>
+<h2 id="personal-contribution"><a class="markdownIt-Anchor" href="#personal-contribution"></a> Personal Contribution</h2>
+<p>I was the person behind the FPGA-side, being responsible for all setups (hardware &amp; software) on FPGA, local processing of accelerometer data (in software), and establishment of 2-way communication between FPGA outputs and host through UART.</p>
+</main>
 
 </article>
 

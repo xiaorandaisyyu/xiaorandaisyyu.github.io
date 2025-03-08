@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
   <title>
     
-    Hello World 丨
+    Decision Trees (Introduction to Machine Learning CW1) 丨
     
 
     Xiaoran Yu
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   
   <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.css">
-  <!-- <link rel="stylesheet" href="/css/style.css?v=1741392989732"> -->
+  <!-- <link rel="stylesheet" href="/css/style.css?v=1741392989731"> -->
   <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
   
 
@@ -81,33 +81,27 @@ document.addEventListener("DOMContentLoaded", function() {
   <main class="main">
     <article class="post">
   
-  <div class="post-title">Hello World</div>
+  <div class="post-title">Decision Trees (Introduction to Machine Learning CW1)</div>
   <div class="post-meta">
-    <div class="date">2025 February 28th</div>
+    <div class="date">2023 November 3rd</div>
     <div class="tags">
       
     </div>
   </div>
   
 
-  <main class="post-content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<pre class="highlight"><code class="bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span>
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<pre class="highlight"><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<pre class="highlight"><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<pre class="highlight"><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <main class="post-content"><p>A decision tree to detect user location based on WiFi signal strengths. <a href="">[<u>GitHub Repo</u>]</a>  <a href="">[<u>Report PDF</u>]</a></p>
+<span id="more"></span>
+<div class="gallery">
+  <a class="image-link" href="../img/projects/intro2mlcw1.png" data-lightbox="projects" data-title="The map of rooms."><img class="image" src="../img/projects/intro2mlcw1.png" alt="" width="30"/>
+  </a>
+</div>
+<h2 id="overview"><a class="markdownIt-Anchor" href="#overview"></a> Overview</h2>
+<p>I built a decision tree classifier in Python as part of my third year Introduction to Machine Learning coursework. The coursework was completed in groups of four, and we received full marks (A*, 100/100). The evaluation included testings of code and a written report.</p>
+<h2 id="project-outline"><a class="markdownIt-Anchor" href="#project-outline"></a> Project Outline</h2>
+<p>We implemented a decision tree algorithm to determine at which of the 4 indoor locations (in which room) the user is standing based on 7 WiFi signal strengths collected from a mobile phone. We also implemented an automatic process to train decision trees, evaluation metrics to quantify the performance (with cross-validation, we calculated the confusion matrix, accuracy, precision, recall, F1 score), and visualisations of the decision trees &amp; evaluation metrics using (exclusively) Matplotlib. Furthermore, we implemented pruning methods to avoid overfitting and enhance performance on unseen data, and compared the performances with and without pruning.</p>
+<h2 id="personal-contribution"><a class="markdownIt-Anchor" href="#personal-contribution"></a> Personal Contribution</h2>
+<p>In the coursework, I took the initiative to establish the overall methodology for the group and played a main role on pretty much everything from beginning to finish, including main code and data visualisation. One of my teammates (<a target="_blank" rel="noopener" href="https://thisisamor.vercel.app/">Amor</a>) and I independently developed two different structures of the decision tree (pointer list &amp; nested list, respectively). I further implemented the pruning method based on the pointer list structure developed by Amor (which is more easily handled during pruning).</p>
 </main>
 
 </article>

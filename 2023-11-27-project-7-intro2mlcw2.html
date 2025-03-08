@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "\\(", right: "\\)", display: false}
+    ]
+  });
+});
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js"></script>
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+  <title>
+    
+    Neural networks from scratch (Introduction to Machine Learning CW2) 丨
+    
+
+    Xiaoran Yu
+  </title>
+
+  
+  <link rel="shortcut icon" href="/dznergy.ico">
+  
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.css">
+  <!-- <link rel="stylesheet" href="/css/style.css?v=1741392989731"> -->
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+  
+
+  <!-- 字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+  
+<link rel="stylesheet" href="/css/root.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/post.css">
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <header class="header">
+  <section class="header-container">
+    <a class="logo" href="/">xiaoran daisy yu</a>
+    <ul class="nav">
+      
+      <li><a href="/categories/publications">publications</a></li>
+      
+      <li><a href="/categories/projects">projects</a></li>
+      
+      <li><a href="/categories/gallery">gallery</a></li>
+      
+      <li><a href="/about">about</a></li>
+      
+    </ul>
+  </section>
+</header>
+  <main class="main">
+    <article class="post">
+  
+  <div class="post-title">Neural networks from scratch (Introduction to Machine Learning CW2)</div>
+  <div class="post-meta">
+    <div class="date">2023 November 27th</div>
+    <div class="tags">
+      
+    </div>
+  </div>
+  
+
+  <main class="post-content"><p>A neural network regressor to predict the price of houses in California. <a href="">[<u>GitHub Repo</u>]</a>  <a href="">[<u>Report PDF</u>]</a></p>
+<span id="more"></span>
+<h2 id="overview"><a class="markdownIt-Anchor" href="#overview"></a> Overview</h2>
+<p>I built a neural network regressor in Python as part of my third year Introduction to Machine Learning coursework. The coursework was completed in groups of four, and we received very high marks (A*, 99/100). The evaluation included testings of code and a written report.</p>
+<h2 id="project-outline"><a class="markdownIt-Anchor" href="#project-outline"></a> Project Outline</h2>
+<p>In the first part, we created a neural network mini-library using NumPy exlusively, including a basic, low-level implementation of the multi-layered neural networks with activation functions and the backpropagation algorithm, and necessary functions for data preprocessing, training and evaluation.</p>
+<p>In the second part, we developed and optimised a neural network architecture using PyTorch to predict the price of houses in California using the California House Prices Dataset (handled in Pandas DataFrames).</p>
+<h2 id="personal-contribution"><a class="markdownIt-Anchor" href="#personal-contribution"></a> Personal Contribution</h2>
+<p>In the first part of this coursework, I was mainly responsible for implementing the trainer and the data preprocessor, and debugging our mini-library as a whole to ensure different components (functions) work together.</p>
+<p>In the second part, I worked with another teammate to implement the regressor (preprocessor + constructor + model-training method), the other two teammated focused on the prediction &amp; evaluation method. We then worked together to develop a thorough methodology to perform hyperparameter tuning, apply approaches to avoid overfitting (dropout, L1 and L2 regularisation), and perform the “paired t-test” to evaluate the statistical significance of our improvement.</p>
+<p>The second part of this coursework has really made all the bookwork clearer, and it was great to see how different hyperparameters and regulation methods affected the performance.</p>
+<h2 id="what-else-have-i-learned-about-ml"><a class="markdownIt-Anchor" href="#what-else-have-i-learned-about-ml"></a> What else have I learned (about ML)?</h2>
+<p>Data preprocessing, data normalisation, effects of imbalanced dataset and how to mitigate it (data augmentation, downsampling the majority class, upsampling the minority class, etc.), how large/small is the optimal dataset size.</p>
+<p>Hyperparameter tuning techniques (cross-validation) (hyperparameters: learning rate, batch size, size and shape of each layer, number of layers) and the “bias-variance tradeoff”, signs of overfitting/underfitting (how well the model generalises), how to resolve them (overfitting: regularisation, dropout, batch normalisation, early stopping, pruning, etc.; underfitting: increase training time, increase dataset size, etc.) and different effectiveness of the above methods.</p>
+<p>How to debug a neural network (make sure all steps align strictly with theoretical principles in maths, observe the change rate in loss, etc.), methods to improve performances even further (for specific applications) when the model has been implemented exactly as it should be.</p>
+<p>Difference in priority regarding model performances between real-world scenarios and theoretical metrics, and that “accuracy is not everything”.</p>
+</main>
+
+</article>
+
+
+<script src="/js/highlight.js"></script>
+
+  </main>
+  <footer class="footer">
+  
+  <span>Copyright © 2025 Xiaoran Yu</span>
+  
+</footer>
+  
+<script src="/js/theme.js"></script>
+
+</body>
+
+</html>

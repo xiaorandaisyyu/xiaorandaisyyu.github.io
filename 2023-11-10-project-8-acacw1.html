@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
   <title>
     
-    Hello World 丨
+    Microarchitecture optimisation in splay trees (Advanced Computer Architecture CW1) 丨
     
 
     Xiaoran Yu
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   
   <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.css">
-  <!-- <link rel="stylesheet" href="/css/style.css?v=1741392989732"> -->
+  <!-- <link rel="stylesheet" href="/css/style.css?v=1741392989731"> -->
   <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
   
 
@@ -81,33 +81,22 @@ document.addEventListener("DOMContentLoaded", function() {
   <main class="main">
     <article class="post">
   
-  <div class="post-title">Hello World</div>
+  <div class="post-title">Microarchitecture optimisation in splay trees (Advanced Computer Architecture CW1)</div>
   <div class="post-meta">
-    <div class="date">2025 February 28th</div>
+    <div class="date">2023 November 10th</div>
     <div class="tags">
       
     </div>
   </div>
   
 
-  <main class="post-content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<pre class="highlight"><code class="bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span>
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<pre class="highlight"><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<pre class="highlight"><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<pre class="highlight"><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <main class="post-content"><p><a href="">[<u>Report PDF</u>]</a></p>
+<span id="more"></span>
+<h2 id="overview"><a class="markdownIt-Anchor" href="#overview"></a> Overview</h2>
+<p>I studied the effect of various architectural features using the SimpleScalar simulator on the performance of the benchmark program, splay trees, and found the sweet spot architecture that ran this program with optimum energy efficiency, as part of my third year Advanced Computer Architecture coursework. The coursework was completed individually, and I received high marks (A*, 17/20). The evaluation included a bash script that runs the simulation of the best configuration and a written report on my systematic strategy to find the optimum implementation and analysis of the experiment results.</p>
+<h2 id="project-outline-personal-work"><a class="markdownIt-Anchor" href="#project-outline-personal-work"></a> Project Outline &amp; Personal Work</h2>
+<p>I observed the functioning and effects of various components of the computer architecture, each parameter individually and sometimes several together to study how they interact and become each other’s bottleneck, in order to find the best trade-off overall. Apart from total energy consumption, I also investigated into their effects on the program’s running speed (instructions completed per clock cycle, start-to-finish time), and reached the conclusion that race to finish doesn’t always win (power consumption-wise).</p>
+<p>Components/parameters tested include: Register Updata Unit and Load-Store Queue size, L1 &amp; L2 cache configurations (number of sets, block size, number of ways/associativity, cacheline replacement policy, hit latency), Branch Predictor configurations(predictor type, Branch Target Buffer configurations, Return Address Stack configurations), Translation Lookaside Buffer (for both instruction and data) configurations, instruction decode/issue/commit bandwidth, number of ALUs.</p>
 </main>
 
 </article>
